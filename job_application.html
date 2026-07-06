@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Job Application Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Online Job Application Form</h1>
+    <p>Please fill out all required fields marked with *</p>
+</div>
+
+<div class="container">
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <div class="form-group">
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nid">National ID Number *</label>
+            <input type="text" id="nid" name="nid" placeholder="Enter your NID number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 017XXXXXXXX" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+            <label>Gender *</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Job Information</legend>
+
+        <div class="form-group">
+            <label for="position">Position Applied For *</label>
+            <select id="position" name="position" required>
+                <option value="">-- Select Position --</option>
+                <option value="software_developer" selected>Software Developer</option>
+                <option value="web_designer">Web Designer</option>
+                <option value="network_engineer">Network Engineer</option>
+                <option value="database_admin">Database Administrator</option>
+                <option value="it_support">IT Support Officer</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Experience Level *</label>
+            <select id="experience" name="experience" required>
+                <option value="">-- Select Experience --</option>
+                <option value="fresher">Fresher</option>
+                <option value="1-2">1–2 Years</option>
+                <option value="3-5">3–5 Years</option>
+                <option value="5plus">More Than 5 Years</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+
+        <div class="form-group">
+            <label>Select Technical Skills</label>
+            <div class="checkbox-group">
+                <div class="option">
+                    <input type="checkbox" id="skill_html" name="skills" value="html">
+                    <label for="skill_html">HTML</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="skill_css" name="skills" value="css">
+                    <label for="skill_css">CSS</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="skill_js" name="skills" value="javascript">
+                    <label for="skill_js">JavaScript</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="skill_python" name="skills" value="python">
+                    <label for="skill_python">Python</label>
+                </div>
+                <div class="option">
+                    <input type="checkbox" id="skill_sql" name="skills" value="sql">
+                    <label for="skill_sql">SQL</label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Educational Information</legend>
+
+        <div class="form-group">
+            <label for="qualification">Highest Qualification *</label>
+            <input type="text" id="qualification" name="qualification" placeholder="e.g. B.Sc in CSE" required>
+        </div>
+
+        <div class="form-group">
+            <label for="institution">University/College Name *</label>
+            <input type="text" id="institution" name="institution" placeholder="Enter institution name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gradyear">Graduation Year *</label>
+            <input type="number" id="gradyear" name="gradyear" placeholder="e.g. 2026" min="1980" max="2100" required>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        <div class="form-group">
+            <label for="resume">Upload Resume/CV *</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </div>
+
+        <div class="form-group">
+            <label for="coverletter">Cover Letter</label>
+            <textarea id="coverletter" name="coverletter" rows="4" maxlength="300" placeholder="Write a short cover letter (max 300 characters)"></textarea>
+            <small>Maximum 300 characters.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Current Address *</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your current address" required></textarea>
+        </div>
+    </fieldset>
+
+    <div class="btn-row">
+        <button type="submit">Submit Application</button>
+        <button type="reset">Reset Form</button>
+    </div>
+
+</form>
+</div>
+
+<footer>
+    <p>&copy; 2026 Online Job Application Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
